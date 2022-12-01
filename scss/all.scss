@@ -14,6 +14,7 @@ body{
     background-color: #0D1722;
 }
 .shining{
+    pointer-events: none;
     position: absolute;
     animation-name: shining;
     animation-duration: 2s;
@@ -21,7 +22,10 @@ body{
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
 }
-
+.tb{
+    z-index: 200;
+    position: relative;
+}
 .container{
     width: 100%;
     max-width: 1200px;
@@ -128,6 +132,7 @@ body{
             width: 100%;
             padding: 12% 0 0;
             position: relative;
+            z-index: 2;
             h2{
                 text-align: center;
                 color: #fff;
@@ -165,7 +170,7 @@ body{
             overflow: hidden;
             justify-content: center;
             width: 100%;
-            z-index: -1;
+         
             > img{
                 width: 110%;
                 height: auto;
@@ -190,6 +195,8 @@ body{
         &-function{
             width:90%;
             margin: 5% auto 0;
+            z-index: 2;
+            position: relative;
             .content{
                 display: flex;
                 width: 100%;
@@ -949,7 +956,7 @@ body{
                 overflow: hidden;
                 justify-content: center;
                 width: 100%;
-                z-index: -1;
+             
                 > img{
                     display: block;
                     width: 110%;

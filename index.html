@@ -14,7 +14,7 @@
                 <img src="./img/2x/first-page-bg.png">
                 <img src="./img/SVG/first-page-detail.svg">
                 <div class="imgBox">
-                    <img src="./img/SVG/first-page-tb.svg">
+                    <img src="./img/SVG/first-page-tb.svg" class="tb">
                     <img src="https://ws.srl.tw/cs/2021122314412321/img/shing.png" class="shining">
                 </div>
             </div>
@@ -81,7 +81,7 @@
             <div class="second-page-bg">
                 <img src="./img/2x/second-page-bg.png">
                 <div class="imgBox">
-                    <img src="./img/SVG/second-page-tb.svg">
+                    <img src="./img/SVG/second-page-tb.svg" class="tb">
                     <img src="https://ws.srl.tw/cs/2021122314412321/img/shing.png" class="shining">
                 </div>
             </div>
@@ -121,7 +121,7 @@
                 <img src="./img/2x/forth-page-bg.png">
             </div>
             <div class="imgBox">
-                <img src="./img/SVG/forth-page-tb.svg">
+                <img src="./img/SVG/forth-page-tb.svg" class="tb">
                 <img src="https://ws.srl.tw/cs/2021122314412321/img/shing.png" class="shining">
             </div>
       
@@ -148,7 +148,7 @@
                 <img src="./img/2x/sixth-page-bg.png">
             </div>
             <div class="imgBox">
-                <img src="./img/SVG/sixth-page-tb.svg">
+                <img src="./img/SVG/sixth-page-tb.svg" class="tb">
                 <img src="https://ws.srl.tw/cs/2021122314412321/img/shing.png" class="shining">
             </div>
         </section>
@@ -173,7 +173,7 @@
                 <img src="./img/2x/eighth-page-bg.png">
             </div>
             <div class="imgBox">
-                <img src="./img/SVG/seventh-page-tb.svg">
+                <img src="./img/SVG/seventh-page-tb.svg" class="tb">
                 <img src="https://ws.srl.tw/cs/2021122314412321/img/shing.png" class="shining">
             </div>
         </section>
@@ -321,6 +321,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     <script>
+        $(".tb").click(()=>{
+           let x = $('.tenth-page').offset().top
+           $('html, body').animate({
+            scrollTop: x
+            },
+            1000);
+           
+        })
         function firstPageAnimation(){
             let gg = gsap.timeline()
 

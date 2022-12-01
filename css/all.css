@@ -17,6 +17,7 @@ body {
 }
 
 .shining {
+  pointer-events: none;
   position: absolute;
   -webkit-animation-name: shining;
           animation-name: shining;
@@ -28,6 +29,11 @@ body {
           animation-fill-mode: forwards;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+}
+
+.tb {
+  z-index: 200;
+  position: relative;
 }
 
 .container {
@@ -135,6 +141,7 @@ body {
   width: 100%;
   padding: 12% 0 0;
   position: relative;
+  z-index: 2;
 }
 .container .second-page-title h2 {
   text-align: center;
@@ -170,7 +177,6 @@ body {
   overflow: hidden;
   justify-content: center;
   width: 100%;
-  z-index: -1;
 }
 .container .second-page-bg > img {
   width: 110%;
@@ -196,6 +202,8 @@ body {
 .container .second-page-function {
   width: 90%;
   margin: 5% auto 0;
+  z-index: 2;
+  position: relative;
 }
 .container .second-page-function .content {
   display: flex;
@@ -920,7 +928,6 @@ body {
     overflow: hidden;
     justify-content: center;
     width: 100%;
-    z-index: -1;
   }
   .container .second-page-bg > img {
     display: block;
