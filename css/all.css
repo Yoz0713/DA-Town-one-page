@@ -696,8 +696,8 @@ body {
   box-shadow: inset 1px 1px rgba(0, 0, 0, 0.5), inset -1px -1px rgba(59, 59, 59, 0.5);
 }
 .container .form-page form .form-box input[type=radio] {
-  width: 3vw;
-  height: 3vw;
+  width: 12px;
+  height: 12px;
 }
 .container .form-page form .form-box-left {
   text-align: center;
@@ -727,6 +727,7 @@ body {
 }
 .container .form-page form .form-box-right ul li {
   display: flex;
+  align-items: center;
   white-space: nowrap;
   font-size: 1.5vw;
   margin-bottom: 5%;

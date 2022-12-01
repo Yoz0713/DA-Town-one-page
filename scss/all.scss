@@ -705,8 +705,8 @@ body{
                     box-shadow: inset 1px 1px rgba(0, 0, 0, 0.5), inset -1px -1px rgba(59, 59, 59, 0.5);
                 }
                 input[type=radio]{
-                    width: 3vw;
-                    height: 3vw;
+                    width:12px;
+                    height:12px;
                 }
                 &-left{
                     text-align: center;
@@ -725,7 +725,7 @@ body{
                 }
                 &-right{
                     display: flex;
-                    
+                
                     color: #fff;
                     flex: 0 0 85%;
                     select{
@@ -739,6 +739,7 @@ body{
                     ul{
                         li{
                             display: flex;
+                            align-items: center;
                             white-space: nowrap;
                             font-size: 1.5vw;
                             margin-bottom: 5%;
