@@ -627,7 +627,7 @@ body {
   filter: drop-shadow(0 0 1px #000);
 }
 .container .tenth-page-case ul :nth-child(2) img {
-  height: 11vw;
+  height: 11.5vw;
 }
 .container .form-page {
   width: 100%;
@@ -719,7 +719,7 @@ body {
   display: flex;
   align-items: center;
   white-space: nowrap;
-  font-size: 1.5vw;
+  font-size: 3vw;
   margin-bottom: 5%;
 }
 .container .form-page form .form-box-right ul li input {
