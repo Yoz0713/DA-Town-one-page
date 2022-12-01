@@ -730,12 +730,14 @@ body{
                         }
                     }
                     ul{
+                        width: 100%;
                         li{
                             display: flex;
                             align-items: center;
                             white-space: nowrap;
                             font-size: 3vw;
                             margin-bottom: 5%;
+                            width: 100%;
                             input{
                                 margin-right: 5%;
                             }

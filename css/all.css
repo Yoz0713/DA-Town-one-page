@@ -715,12 +715,16 @@ body {
 .container .form-page form .form-box-right select:focus {
   outline: none;
 }
+.container .form-page form .form-box-right ul {
+  width: 100%;
+}
 .container .form-page form .form-box-right ul li {
   display: flex;
   align-items: center;
   white-space: nowrap;
   font-size: 3vw;
   margin-bottom: 5%;
+  width: 100%;
 }
 .container .form-page form .form-box-right ul li input {
   margin-right: 5%;
