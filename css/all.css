@@ -597,15 +597,13 @@ body {
 }
 .container .tenth-page-bg {
   position: absolute;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
   overflow: hidden;
   left: 0%;
   top: 25%;
 }
 .container .tenth-page-bg img {
-  width: 25%;
+  width: 20%;
 }
 .container .tenth-page-case {
   width: 100%;
@@ -624,7 +622,7 @@ body {
   border-bottom: 1px dashed rgba(204, 204, 204, 0.281);
 }
 .container .tenth-page-case ul li img {
-  width: 70vw;
+  width: 100%;
   height: auto;
   filter: drop-shadow(0 0 1px #000);
 }
