@@ -4,6 +4,8 @@
     text-decoration: none;
     box-sizing: border-box;
     list-style: none;
+    appearance: none;
+    -webkit-appearance: none;
 }
 body{
     background-color: #0D1722;
@@ -623,9 +625,9 @@ body{
                     padding-bottom: 7.5%;
                     border-bottom: 1px dashed rgba(204, 204, 204, 0.281);
                     img{
-                        width: 100%;
+                        width: 70vw;
                         height: auto;
-                    
+                        filter: drop-shadow(0 0 1px #000);
                     }
                 }
                 & :nth-child(2){

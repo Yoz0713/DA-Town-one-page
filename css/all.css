@@ -4,6 +4,9 @@
   text-decoration: none;
   box-sizing: border-box;
   list-style: none;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
 }
 
 body {
@@ -618,8 +621,9 @@ body {
   border-bottom: 1px dashed rgba(204, 204, 204, 0.281);
 }
 .container .tenth-page-case ul li img {
-  width: 100%;
+  width: 70vw;
   height: auto;
+  filter: drop-shadow(0 0 1px #000);
 }
 .container .tenth-page-case ul :nth-child(2) img {
   transform: scale(1.25);
