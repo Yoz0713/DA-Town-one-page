@@ -319,8 +319,457 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     <script>
+        function firstPageAnimation(){
+            let gg = gsap.timeline()
+
+            gg.fromTo(".first-page-bg",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8
+            }).fromTo(".first-page-title .logoBox",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8
+            },"<+0.5").fromTo(".first-page-title .paraBox",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8
+            },"<+0.3").fromTo(".first-page-title .imgBox",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8
+            },"<+0.3").fromTo(".first-page-bg .imgBox",{
+                x:30,
+                opacity:0
+            },{
+                x:0,
+                opacity:1,
+                duration:0.8
+            },"<+0.3")
+        }
+        firstPageAnimation()
+        function secondPageAnimation(){
+            let gg = gsap.timeline({
+                scrollTrigger:{
+                    trigger:".second-page",
+                    start:"top 80%",
+                  
+                }
+            })
+            let gg2 = gsap.timeline({
+                scrollTrigger:{
+                    trigger:".second-page-title",
+                    start:"top center",
+                    toggleClass: 'active',
+              
+                }
+            })
+            gg.fromTo(".second-page-bg",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8
+            }).fromTo(".second-page-title h2",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8
+            },"<+0.5").fromTo(".second-page-title p",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8
+            },"<+0.3").fromTo(".second-page-function .imgBox",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8,
+                stagger:0.15
+            },"<+0.3").fromTo(".second-page-bg .imgBox",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8,
+                stagger:0.15
+            },"<+1.2")
+        }
+        secondPageAnimation()
+        function thirdPageAnimation(){
+            let gg = gsap.timeline({
+                scrollTrigger:{
+                    trigger:".third-page",
+                    start:"top 80%",
+                  
+                }
+            })
+            let gg2 = gsap.timeline({
+                scrollTrigger:{
+                    trigger:".third-page-title",
+                    start:"top center",
+                    toggleClass: 'active',
+              
+                }
+            })
+            gg.fromTo(".third-page-bg",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8
+            }).fromTo(".third-page-title h2",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8
+            },"<+0.5").fromTo(".third-page-title p",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8
+            },"<+0.3").fromTo(".third-page-contentBox .imgBox",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8,
+                stagger:0.15
+            },"<+0.6")
+        }
+        thirdPageAnimation()
+        function forthPageAnimation(){
+            let gg = gsap.timeline({
+                scrollTrigger:{
+                    trigger:".forth-page",
+                    start:"top 80%",
+                  
+                }
+            })
+            let gg2 = gsap.timeline({
+                scrollTrigger:{
+                    trigger:".forth-page-title",
+                    start:"top center",
+                    toggleClass: 'active',
+              
+                }
+            })
+            gg.fromTo(".forth-page-bg",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8
+            }).fromTo(".forth-page-title h2",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8
+            },"<+0.5").fromTo(".forth-page-title p",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8
+            },"<+0.3")
+        }
+        forthPageAnimation()
+        function fifthPageAnimation(){
+            let gg = gsap.timeline({
+                scrollTrigger:{
+                    trigger:".fifth-page",
+                    start:"top 80%",
+                  
+                }
+            })
+            let gg2 = gsap.timeline({
+                scrollTrigger:{
+                    trigger:".fifth-page-title",
+                    start:"top center",
+                    toggleClass: 'active',
+              
+                }
+            })
+            gg.fromTo(".fifth-page-bg",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8
+            }).fromTo(".fifth-page-title h2",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8
+            },"<+0.5").fromTo(".fifth-page-title p",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8
+            },"<+0.3").fromTo(".fifth-page-title img",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8
+            },"<+0.3")
+        }
+        fifthPageAnimation()
+        function sixthPageAnimation(){
+            let gg = gsap.timeline({
+                scrollTrigger:{
+                    trigger:".sixth-page",
+                    start:"top 80%",
+                  
+                }
+            })
+            let gg2 = gsap.timeline({
+                scrollTrigger:{
+                    trigger:".sixth-page-title",
+                    start:"top center",
+                    toggleClass: 'active',
+              
+                }
+            })
+            gg.fromTo(".sixth-page-bg",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8
+            }).fromTo(".sixth-page-title h2",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8
+            },"<+0.5").fromTo(".sixth-page-title p",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8
+            },"<+0.3").fromTo(".sixth-page-title img",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8
+            },"<+0.3").fromTo(".sixth-page > .imgBox",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8
+            },"<+0.3")
+        }
+        sixthPageAnimation()
+        function seventhPageAnimation(){
+            let gg = gsap.timeline({
+                scrollTrigger:{
+                    trigger:".seventh-page",
+                    start:"top 80%",
+                  
+                }
+            })
+            let gg2 = gsap.timeline({
+                scrollTrigger:{
+                    trigger:".seventh-page-title",
+                    start:"top center",
+                    toggleClass: 'active',
+              
+                }
+            })
+            gg.fromTo(".seventh-page-bg",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8
+            }).fromTo(".seventh-page-title h2",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8
+            },"<+0.5").fromTo(".seventh-page-title p",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8
+            },"<+0.3").fromTo(".seventh-page-title img",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8
+            },"<+0.3").fromTo(".seventh-page > .imgBox",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8
+            },"<+0.3")
+        }
+        seventhPageAnimation()
+        function eighthPageAnimation(){
+            let gg = gsap.timeline({
+                scrollTrigger:{
+                    trigger:".eighth-page",
+                    start:"top 80%",
+                  
+                }
+            })
         
+            gg.fromTo(".eighth-page-bg",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8
+            }).fromTo(".eighth-page-title h3",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8
+            },"<+0.5").fromTo(".eighth-page-title p",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8
+            },"<+0.3").fromTo(".eighth-page > .imgBox",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8
+            },"<+0.3")
+        }
+        eighthPageAnimation()
+        function ninthPageAnimation(){
+            let gg = gsap.timeline({
+                scrollTrigger:{
+                    trigger:".ninth-page",
+                    start:"top 80%",
+                  
+                }
+            })
+          
+            gg.fromTo(".ninth-page-bg",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8
+            })
+        }
+        ninthPageAnimation()
+        function tenthPageAnimation(){
+            let gg = gsap.timeline({
+                scrollTrigger:{
+                    trigger:".tenth-page",
+                    start:"top 80%",
+                  
+                }
+            })
+          
+            gg.fromTo(".tenth-page-title",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8
+            }).fromTo(".tenth-page-bg",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8
+            },"<+0.5").fromTo(".tenth-page-case li",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8,
+                stagger:0.15
+            },"<+0.3")
+            let gg2 = gsap.timeline({
+                scrollTrigger:{
+                    trigger:".form-page",
+                    start:"top 80%",
+                  
+                }
+            })
+            gg2.fromTo(".form-page",{
+                y:30,
+                opacity:0
+            },{
+                y:0,
+                opacity:1,
+                duration:0.8
+            })
+            
+        }
+        tenthPageAnimation()
     </script>
 </body>
 </html>

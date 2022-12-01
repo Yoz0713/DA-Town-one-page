@@ -32,6 +32,7 @@ body{
         width: 100%;
         height: 218vw;
         max-height: 100vh;
+        background-color: #000;
         &-bg{
             display: flex;
             justify-content: center;
@@ -40,7 +41,7 @@ body{
             position: absolute;
             left: 0;
             top: 0;
-            z-index: -1;
+            z-index: 2;
             & :nth-child(1){
                 width: 140%;
                 height: auto;
@@ -76,6 +77,8 @@ body{
             align-items: center;
             width: 100%;
             padding: 12% 0;
+            z-index: 3;
+            position: relative;
             .logoBox{
        
                 width: 24%;
@@ -138,13 +141,19 @@ body{
                 display: block;
                 content:"";
                 position: absolute;
-                width: 12%;
+                width: 0;
+                transition: width 1s 1s;
                 background-color: #f7cd1c;
                 height: 2.5px;
                 left: 0;
                 right: 0;
                 margin: 0 auto;
                 bottom:18%;
+            }
+        }
+        .active{
+            &::after{
+                width: 12%;
             }
         }
         &-bg{
@@ -228,13 +237,20 @@ body{
                 display: block;
                 content:"";
                 position: absolute;
-                width: 12%;
+                width: 0;
+                transition: width 1s 1s;
                 background-color: #f7cd1c;
                 height: 2.5px;
                 left: 0;
                 right: 0;
                 margin: 0 auto;
                 bottom:22%;
+            }
+           
+        }
+        .active{
+            &::after{
+                width: 12%;
             }
         }
         &-contentBox{
@@ -290,13 +306,19 @@ body{
                 display: block;
                 content:"";
                 position: absolute;
-                width: 12%;
+                width: 0;
+                transition: width 1s 1s;
                 background-color: #f7cd1c;
                 height: 2.5px;
                 left: 0;
                 right: 0;
                 margin: 0 auto;
                 bottom:17%;
+            }
+        }
+        .active{
+            &::after{
+                width: 12%;
             }
         }
         &-bg{
@@ -378,13 +400,19 @@ body{
                 display: block;
                 content:"";
                 position: absolute;
-                width: 12%;
+                width: 0;
+                transition: width 1s 1s;
                 background-color: #000;
                 height: 2.5px;
                 left: 0;
                 right: 0;
                 margin: 0 auto;
                 bottom:35%;
+            }
+        }
+        .active{
+            &::after{
+                width: 12%;
             }
         }
     }
@@ -415,13 +443,19 @@ body{
                 display: block;
                 content:"";
                 position: absolute;
-                width: 12%;
+                width: 0;
+                transition: width 1s 1s;
                 background-color: #000;
                 height: 2.5px;
                 left: 0;
                 right: 0;
                 margin: 0 auto;
                 bottom:30%;
+            }
+        }
+        .active{
+            &::after{
+                width: 12%;
             }
         }
         &-bg{
@@ -481,13 +515,19 @@ body{
                 display: block;
                 content:"";
                 position: absolute;
-                width: 12%;
+                width: 0;
+                transition: width 1s 1s;
                 background-color: #000;
                 height: 2.5px;
                 left: 0;
                 right: 0;
                 margin: 0 auto;
                 bottom:27%;
+            }
+        }
+        .active{
+            &::after{
+                width: 12%;
             }
         }
         &-bg{
@@ -788,7 +828,7 @@ body{
                 position: relative;
                 left: 0;
                 top: 0;
-                z-index: -1;
+                z-index: 2;
                 & :nth-child(1){
                     width: 100%;
                     height: auto;
@@ -890,7 +930,7 @@ body{
                     display: block;
                     content:"";
                     position: absolute;
-                    width: 12%;
+                    
                     background-color: #f7cd1c;
                     height: 2.5px;
                     left: 0;
@@ -991,7 +1031,7 @@ body{
                     display: block;
                     content:"";
                     position: absolute;
-                    width: 12%;
+                    
                     background-color: #f7cd1c;
                     height: 2.5px;
                     left: 0;
@@ -1056,7 +1096,7 @@ body{
                     display: block;
                     content:"";
                     position: absolute;
-                    width: 12%;
+                    
                     background-color: #f7cd1c;
                     height: 2.5px;
                     left: 0;
@@ -1146,7 +1186,7 @@ body{
                     display: block;
                     content:"";
                     position: absolute;
-                    width: 12%;
+                    
                     background-color: #000;
                     height: 2.5px;
                     left: 0;
@@ -1186,7 +1226,7 @@ body{
                     display: block;
                     content:"";
                     position: absolute;
-                    width: 12%;
+                    
                     background-color: #000;
                     height: 2.5px;
                     left: 0;
@@ -1254,7 +1294,7 @@ body{
                     display: block;
                     content:"";
                     position: absolute;
-                    width: 12%;
+                    
                     background-color: #000;
                     height: 2.5px;
                     left: 0;
@@ -1470,6 +1510,10 @@ body{
                         outline: none;
                         border: none;
                         box-shadow: inset 1px 1px rgba(0, 0, 0, 0.5), inset -1px -1px rgba(59, 59, 59, 0.5);
+                    }
+                    input[type=radio]{
+                        width: 18px;
+                        height: 18px;
                     }
                     &-left{
                         text-align: center;
