@@ -622,30 +622,23 @@ body{
                 margin: 0 auto;
                 li{
                     display: flex;
-                    justify-content: center;
+                    justify-content:flex-start;
                     width: 100%;
                     margin-bottom: 7.5%;
                     padding-bottom: 7.5%;
                     border-bottom: 1px dashed rgba(204, 204, 204, 0.281);
                     img{
-                        width: 100%;
-                        height: auto;
+                        width: auto;
+                        height: 7vw;
                         filter: drop-shadow(0 0 1px #000);
                     }
                 }
                 & :nth-child(2){
                     img{
-                       transform: scale(1.25);
-                       margin-left: 11.5%;
+                        height:11vw;
                     }
                 }
-                & :nth-child(3){
-                    border: none;
-                    img{
-                       transform: scale(0.97);
-                       margin-right: 30%;
-                    }
-                }
+               
             }
         }
     }
@@ -1402,28 +1395,20 @@ body{
                     margin: 0 auto;
                     li{
                         display: flex;
-                        justify-content: center;
+                        
                         width: 100%;
                         margin-bottom: 7.5%;
                         padding-bottom: 7.5%;
                         border-bottom: 1px dashed rgba(204, 204, 204, 0.281);
                         img{
-                            width: 100%;
-                            height: auto;
-                        
+                            width:auto;
+                            height:85px;
                         }
+                       
                     }
                     & :nth-child(2){
                         img{
-                           transform: scale(1.25);
-                           margin-left: 11.5%;
-                        }
-                    }
-                    & :nth-child(3){
-                        border: none;
-                        img{
-                           transform: scale(0.97);
-                           margin-right: 30%;
+                            height: 140px;
                         }
                     }
                 }
