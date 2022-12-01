@@ -4,6 +4,9 @@
   text-decoration: none;
   box-sizing: border-box;
   list-style: none;
+}
+
+input[type=text], input[type=submit] {
   -moz-appearance: none;
        appearance: none;
   -webkit-appearance: none;
@@ -691,6 +694,10 @@ body {
   outline: none;
   border: none;
   box-shadow: inset 1px 1px rgba(0, 0, 0, 0.5), inset -1px -1px rgba(59, 59, 59, 0.5);
+}
+.container .form-page form .form-box input[type=radio] {
+  width: 3vw;
+  height: 3vw;
 }
 .container .form-page form .form-box-left {
   text-align: center;
