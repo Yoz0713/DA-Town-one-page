@@ -833,6 +833,7 @@ body{
                 & :nth-child(1){
                     width: 100%;
                     height: auto;
+                    max-height: none;
                 }
                 & :nth-child(2){
                     width: 33%;
